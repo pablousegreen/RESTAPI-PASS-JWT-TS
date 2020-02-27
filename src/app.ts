@@ -18,7 +18,7 @@ app.use(passport.initialize());
 
 
 app.get('/', (req, res)=>{
-    return res.send((`The API is at http://localhost:${app.get('port')}}`);
+    return res.send(`The API is at http://localhost:${app.get('port')}}`);
 })
 
 export default app;
