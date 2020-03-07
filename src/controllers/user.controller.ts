@@ -10,7 +10,7 @@ function createToken(user: IUser){
     });
 }
 
-export const sigUp = async (
+export const singUp = async (
     req: Request,
     resp: Response ): Promise<Response> =>{
         if(!req.body.email || !req.body.passport) {
@@ -28,7 +28,7 @@ export const sigUp = async (
     }
 
 
-export const sigIn = async (
+export const singIn = async (
     req: Request, res: Response): Promise<Response> =>{
         if(!req.body.email || !req.body.password){
             return res.status(400).json({msg: "The usder does not exits"});
